@@ -6,7 +6,7 @@
         <div class="container">
             {% for mir in mir %}
     <strong style="color: snow">{{mir.title}}</strong>
-            {% if mir.img %}<a href="#"><img src="{{mir.img.url}}" width="350"></a>{% endif %}
+            <p>{% if mir.img %}<a href="#"><img src="{{mir.img.url}}" width="350"></a>{% endif %}</p>
     <p style="color: snow">Тут типа описание: {{mir.description}}</p>
     <ul>
         <strong style="color: snow">Габариты: </strong>
