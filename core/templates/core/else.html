@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+{% for e in e %}
+
+<p><strong style="color:snow">Название - {{e.title}}</strong></p>
+<p style="color:snow">Описание: {{e.description}}</p>
+{% if e.img %}<a href="#"><img src="{{e.img.url}}" width="375"></a> {% endif %}
+<ul style="color:snow">
+    <li>{{e.parameter1}}</li>
+    <li>{{e.parameter2}}</li>
+    <li>{{e.parameter3}} - mm</li>
+    <li>{{e.parameter4}} - mm</li>
+</ul>
+
+{% endfor %}
+
+
+{% endblock content %}

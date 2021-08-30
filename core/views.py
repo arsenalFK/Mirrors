@@ -17,9 +17,19 @@ class Mirrors(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         mir = Mirror.objects.all()
-        ano = Another.objects.all()
         context.update({
-            'mir': mir,
-            'ano': ano,
+            'mir': mir
+        })
+        return context
+
+
+class Else(TemplateView):
+    template_name = 'core/else.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        e = Another.objects.all()
+        context.update({
+            'e': e,
         })
         return context
