@@ -5,13 +5,13 @@
 {% for e in e %}
 
 <p><strong style="color:darkcyan">Название - {{e.title}}</strong></p>
-<strong><p style="color:darkcyan">Описание: {{e.description}}</p></strong>
 {% if e.img %}<a href="#"><img src="{{e.img.url}}" width="355"></a> {% endif %}
+<strong><p style="color:darkcyan">Описание: {{e.description}}</p></strong>
 <strong><ul style="color:darkcyan">
-    <li>{{e.parameter1}}</li>
-    <li>{{e.parameter2}}</li>
-    <li>{{e.parameter3}} - mm</li>
-    <li>{{e.parameter4}} - mm</li>
+    <li>{{e.parameter4}}</li>
+    <li>{{e.parameter3}}</li>
+    <li>{{e.parameter2}} - mm</li>
+    <li>{{e.parameter1}} - mm</li>
 </ul></strong>
 
 {% endfor %}
