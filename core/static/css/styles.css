@@ -1,4 +1,6 @@
 body {
     font-family: 'Titillium Web', sans-serif;
-    background: url(../images/bodys.jpg) center;
+    background: url(../images/209.jpg) center;
+    height: 100vh;
+    background: cover no-repeat;
 }
