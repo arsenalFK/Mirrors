@@ -4,10 +4,10 @@
 
 {% for e in e %}
 
-<p><strong style="color:snow">Название - {{e.title}}</strong></p>
-<p style="color:snow">Описание: {{e.description}}</p>
+<p><strong style="color:darkcyan">Название - {{e.title}}</strong></p>
+<p style="color:darkcyan">Описание: {{e.description}}</p>
 {% if e.img %}<a href="#"><img src="{{e.img.url}}" width="355"></a> {% endif %}
-<ul style="color:snow">
+<ul style="color:darkcyan">
     <li>{{e.parameter1}}</li>
     <li>{{e.parameter2}}</li>
     <li>{{e.parameter3}} - mm</li>

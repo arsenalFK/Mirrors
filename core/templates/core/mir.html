@@ -5,18 +5,18 @@
     <div class="intro">
         <div class="container">
             {% for mir in mir %}
-    <strong style="color: snow">{{mir.title}}</strong>
+    <strong style="color: darkcyan">{{mir.title}}</strong>
             <p>{% if mir.img %}<a href="#"><img src="{{mir.img.url}}" width="340"></a>{% endif %}</p>
-    <p style="color: snow">Тут типа описание: {{mir.description}}</p>
+    <p style="color: darkcyan">Тут типа описание: {{mir.description}}</p>
     <ul>
-        <strong style="color: snow">Габариты: </strong>
-        <li style="color: snow">{{mir.product}}</li>
-        <li style="color: snow">Мануфактура - {{mir.manufacture}}</li>
-        <li style="color: snow">Цвет - {{mir.color}}</li>
-        <li style="color: snow">Тип - {{mir.type}}</li>
-        <li style="color: snow"> Высота - {{mir.height}} mm</li>
-        <li style="color: snow">Ширина - {{mir.width}} mm</li>
-        <li style="color: snow">Толщина - {{mir.thickness}} mm</li>
+        <strong style="color: darkcyan">Габариты: </strong>
+        <li style="color: darkcyan">{{mir.product}}</li>
+        <li style="color: darkcyan">Мануфактура - {{mir.manufacture}}</li>
+        <li style="color: darkcyan">Цвет - {{mir.color}}</li>
+        <li style="color: darkcyan">Тип - {{mir.type}}</li>
+        <li style="color: darkcyan"> Высота - {{mir.height}} mm</li>
+        <li style="color: darkcyan">Ширина - {{mir.width}} mm</li>
+        <li style="color: darkcyan">Толщина - {{mir.thickness}} mm</li>
     </ul>
     {% endfor %}
         </div>
